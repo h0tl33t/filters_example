@@ -5,13 +5,23 @@
 <div class='filters'>
   <%= form_for search, as: :q, url: users_path, method: :get do |f| %>
     <div>
-      <%= f.label :first_name_eq, 'First Name' %>
-      <%= f.text_field :first_name_eq %>
+      <%= f.label :first_name_cont, 'First Name' %>
+      <%= f.text_field :first_name_cont %>
     </div>
 
     <div>
       <%= f.label :last_name_cont, 'Last Name' %>
       <%= f.text_field :last_name_cont %>
+    </div>
+
+    <div>
+      <%= f.label :email_cont, 'Email' %>
+      <%= f.text_field :email_cont %>
+    </div>
+
+    <div>
+      <%= f.label :phone_cont, 'Phone' %>
+      <%= f.text_field :phone_cont %>
     </div>
 
     <div>
