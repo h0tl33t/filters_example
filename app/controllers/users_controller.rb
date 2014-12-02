@@ -52,7 +52,7 @@ class UsersController < ApplicationController
   helper_method :search
 
   def user
-    @user ||= User.find(query_params)
+    @user ||= User.find(params[:id])
   end
   helper_method :user
 
